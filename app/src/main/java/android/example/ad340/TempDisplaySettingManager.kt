@@ -11,7 +11,7 @@ class TempDisplaySettingManager(context:Context) {
 
 
     fun updateSetting(setting:TempDisplaySetting){
-        preferences.edit().putString("key_temp_display", setting.name).apply()
+        preferences.edit().putString("key_temp_display", setting.name).commit()
     }
 
     fun getTempDisplaySetting(): TempDisplaySetting{
